@@ -1,0 +1,14 @@
+{
+  "name": "project4_dommethods",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "node-sass -w sass/styles.scss css/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
