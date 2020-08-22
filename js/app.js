@@ -65,11 +65,15 @@ function doubleTheirMoney() {
 
 // sort users by the richest
 function sortRichest() {
-  console.log(data);
   data.sort((a, b) => {
     return b.money - a.money;
   });
-  console.log(data);
+  updateDOM();
+}
+
+// filter non-millionairs out
+function filterMillionaires() {
+  data = data.filter((item) => item.money >= 1000000);
   updateDOM();
 }
 
@@ -77,3 +81,4 @@ function sortRichest() {
 addUserBtn.addEventListener("click", getRandomUser);
 doubleBtn.addEventListener("click", doubleTheirMoney);
 sortBtn.addEventListener("click", sortRichest);
+showMillionairesBtn.addEventListener("click", filterMillionaires);
